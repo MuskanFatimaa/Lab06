@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<div class="header">
+</div>
+<section id="container">
+<ul>
+<li class="first">one</li>
+<li class="second">two</li>
+<li class="third">three</li>
+</ul>
+<ol>
+<li class="first">one</li>
+<li class="second">two</li>
+<li class="third">three</li>
+</ol>
+</section>
+<div class="footer">
+</div>
+//part one
+<script>
+    var containerSection = document.getElementById("container");
+    console.log(containerSection);
+</script>
+//part two
+<script>
+    var containerSection = document.querySelector("#container");
+</script>
+//part three
+<script>
+    var ListItems = document.querySelectorAll(".second");
+    ListItems.forEach(function(item) {
+  console.log(item.textContent);
+});
+</script>
+//part four
+<script>
+    var myitems = document.querySelectorAll("ol .third");
+    console.log(myitems.textContent);
+</script>
+
+//part five
+<script>
+    var thistask = document.getElementById("container");
+    thistask.textContent = "Hello!";
+</script>
+
+//part six
+<script>
+    // Select the div element with a class of "footer"
+var footerDiv = document.querySelector(".footer");
+
+// Add the class "main" to the selected div element
+footerDiv.classList.add("main");
+
+</script>
+
+//part seven
+<script>
+    var newdiv =  document.querySelector(".footer");
+    newdiv.classList.remove("main");
+</script>
+
+
+<script>
+    //part eight
+    var newlistitem = document.createElement("li");
+    //part nine
+    newlistitem.textContent = "four";
+    //part ten
+    var existinglist = document.querySelector("ul");
+    existinglist.appendChild(newlistitem);
+</script>
+
+//part eleven
+<script>
+    var olelement = document.querySelector("ol");
+    var lielement = olelement.querySelector("li");
+
+    lielement.forEach(function(li) {
+  li.style.backgroundColor = "green";
+});
+</script>
+
+//part twelve
+<script>
+    // Select the div element with a class of "footer"
+var footerDiv = document.querySelector(".footer");
+
+// Check if the element exists before attempting to remove it
+if (footerDiv) {
+  // Remove the selected div element
+  footerDiv.remove();
+}
+
+</script>
+
+</body>
